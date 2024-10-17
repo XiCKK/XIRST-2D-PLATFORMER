@@ -78,5 +78,10 @@ public class UIManager : MonoBehaviour
         SoundManager.instance.PlaySound(confirmEffect);
         SoundManager.instance.ChangeMusicVolume(0.2f);
     }
+    public void Restart()
+    {
+        SoundManager.instance.PlaySound(confirmEffect);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     #endregion
 }
